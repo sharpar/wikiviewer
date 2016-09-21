@@ -11,3 +11,27 @@ body {
     margin: 0 auto;
     float: none;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-centered {
+        width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-centered {
+        width: 90%;
+    }
+}
+
+.results {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #AEB6BF;
+    border-bottom: 1px solid #AEB6BF;
+}
+
+.results div {
+    padding-top: 12px;
+    border-bottom: 1px solid #AEB6BF;
+}

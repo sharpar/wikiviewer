@@ -24,6 +24,7 @@ function search() {
             'Api-User-Agent': 'Example/1.0'
         },
         success: function(data) {
+            console.log("hello");
 
             // First we clear the children from our class to make sure no previous results are showing.
             $('.results').empty();
@@ -59,6 +60,11 @@ function search() {
     });
 }
 
-$('#search').keyup(function() {
-    search();
+$(document).ready(function() {
+    'use strict';
+
+    $('#search').keyup(function() {
+        search();
+    });
+
 });
